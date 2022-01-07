@@ -17,3 +17,7 @@ def index(request):
         'document': document,
     }
     return render(request, 'tenant/index.html', context)
+
+
+def listings(request):
+    return render(request, 'tenant/listings.html')
